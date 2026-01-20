@@ -94,6 +94,13 @@ h2{
     .home-image{
         width: clamp(300px, 50%, 400px);
     }
+
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.418), rgb(255, 255, 255)), 
+        url(../assets/hero-luxury.jpg);
+    background-size: cover; 
+    background-position: center;
+
 }
  
 #container{
