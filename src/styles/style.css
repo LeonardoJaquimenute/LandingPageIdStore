@@ -47,7 +47,7 @@ a.btn{
 
 .subtitle-home{
         font-family: 'Inter', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: hsl(var(--primary));
         margin-top: 10px;
         opacity: 0.4;
@@ -58,31 +58,48 @@ a.btn{
 h2{
     &.title-home{
         font-family: 'Playfair Display', serif;
-        font-size: 2.5rem;
+        font-size: 1.25rem;
         color: hsl(var(--secondary));
         margin-top: 10px;
-        font-weight: 400;
+        font-weight: 500;
+        max-width: 600px;
+        text-align: center;
         opacity: 0.7;
+        margin: 0px;
     }
 }
 
 .title-home{
         font-family: 'Playfair Display', serif;
-        font-size: 3rem;
+        text-align: center;
+        font-size: clamp(2.3rem, 5vw, 4.3rem);
+        text-transform: uppercase;
         color: hsl(var(--primary));
         margin-top: 10px;
         font-weight: 400;
+        line-height: 1.2;
+        max-width: 700px;
 }
 
 #inicio{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     min-height: calc(100vh - 96px);
+    padding-top: clamp(0px, vw, 32px);
+
+    .home-image{
+        width: clamp(300px, 50%, 400px);
+    }
 }
 
 #container{
-    background-image: asset('../assets/idStore.jpg');
-    background-size: contain;
+    background-color: hsl(var(--background));
+}
+
+.home-actions{
+    display: flex;
+    margin-top: 12px;
+    gap: 12px;
 }
