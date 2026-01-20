@@ -74,4 +74,10 @@ h2{
         font-weight: 400;
 }
 
+#inicio{
 
+}
+
+#container{
+    background-image: asset('../assets/idStore.jpg');
+}
