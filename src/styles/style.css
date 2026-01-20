@@ -81,3 +81,8 @@ h2{
     align-items: center;
     min-height: calc(100vh - 96px);
 }
+
+#container{
+    background-image: asset('../assets/idStore.jpg');
+    background-size: contain;
+}
