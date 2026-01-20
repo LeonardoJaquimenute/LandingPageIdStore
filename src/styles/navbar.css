@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+header{
+    background-color: hsl(var(--background));
+    padding: 12px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            font-family: Playfair Display, serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: hsl(var(--secondary));
+        }
+        
+        .logo{
+            width: 70px;
+        }
+
+        ul{
+            display: none;
+            list-style: none;
+            gap: 0.5rem;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            padding: 1rem;
+            background-color: hsl(var(--background));
+
+            &.show{
+                display: flex;
+            }
+
+            li{
+                text-align: center;
+
+                a{
+                    color: hsl(var(--secondary));
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                        color: hsl(var(--gold));
+                        border-bottom: 1px solid hsl(var(--gold));
+                }   
+            }
+        }
+    }
+        .btn-default{
+            display: none;
+            font-size: 0.7rem;
+        }
+    }   
+}
+    
+@media(min-width: 768px){
+    header{
+        .navbar{
+            ul{
+                display: flex;
+                position: static;
+                flex-direction: row;
+                gap: 1rem;
+                width: auto;
+                padding: 0;
+                
+                li{
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+           
+            .btn-default{
+                display: block;
+            }
+
+            .btn-mobile{
+                display: none;
+            }
+        }   
+    }
+}
