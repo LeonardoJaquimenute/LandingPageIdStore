@@ -49,9 +49,9 @@ a.btn{
 .subtitle-home{
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
-        color: hsl(var(--primary));
+        color: hsl(var(--secondary));
         margin-top: 10px;
-        opacity: 0.4;
+        opacity: 0.8;
         font-weight: 250;
     }
 
@@ -65,7 +65,7 @@ h2{
         font-weight: 500;
         max-width: 600px;
         text-align: center;
-        opacity: 0.7;
+        opacity: 0.9;
         margin: 0px;
     }
 }
@@ -90,16 +90,16 @@ h2{
     min-height: calc(100vh - 96px);
     padding: 32px 4%;
     padding-top: clamp(0px, vw, 32px);
-
-    .home-image{
-        width: clamp(300px, 50%, 400px);
-    }
-
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.418), rgb(255, 255, 255)), 
         url(../assets/hero-luxury.jpg);
     background-size: cover; 
-    background-position: center;
+    background-position: 80%;
+    
+    .home-image{
+        width: clamp(300px, 50%, 400px);
+    }
+
 
 }
  
