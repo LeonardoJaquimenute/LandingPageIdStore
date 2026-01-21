@@ -33,17 +33,24 @@ a.btn{
     color: hsl(var(--primary));
     transition: background-color 0.3s ease;
     transition: all 0.2s ease;
-
-        &:hover{
-            color: hsl(var(--gold));
-            border-bottom: 1px solid hsl(var(--gold));
-            border-radius: 0px;
-        }
+    
+    &:hover{
+        color: hsl(var(--gold));
+        border-bottom: 1px solid hsl(var(--gold));
+        border-radius: 0px;
+    }
 }
 
-.home-image{
-    width: 100%;
-    height: auto;
+.btn-outlined{
+    border: 2px solid hsl(var(--primary));
+    background-color: hsl(var(--primary));
+    color: hsl(var(--background));
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover{
+        background-color: transparent;
+        color: hsl(var(--primary));
+    }
 }
 
 .subtitle-home{
@@ -106,11 +113,17 @@ h2{
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)), 
         url(../assets/unnamed.jpg);
-    background-size: clamp(100%, 1500px, 2000px); 
+    background-size: clamp(100%, 1600px, 2000px); 
     background-position: 80%;
     
     .home-image{
         width: clamp(300px, 50%, 400px);
+    }
+    
+    .home-actions{
+        display: flex;
+        margin-top: 12px;
+        gap: 12px;
     }
 }
  
@@ -118,21 +131,13 @@ h2{
     background-color: hsl(var(--background));
 }
 
-.home-actions{
+
+#products-container{
     display: flex;
-    margin-top: 12px;
-    gap: 12px;
+    padding:32px 4%;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    min-height: calc(100vh - 96px);
+    
 }
-
-.btn-outlined{
-    border: 2px solid hsl(var(--primary));
-    background-color: hsl(var(--primary));
-    color: hsl(var(--background));
-    transition: background-color 0.3s ease, color 0.3s ease;
-
-    &:hover{
-        background-color: transparent;
-        color: hsl(var(--primary));
-    }
-}
-
