@@ -50,13 +50,26 @@ a.btn{
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
         color: hsl(var(--secondary));
-        margin-top: 10px;
+        margin-top: 130px;
         opacity: 0.8;
         font-weight: 250;
     }
 
 
 h2{
+
+    &.title-section{
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        font-size: clamp(1.5rem, 5vw, 4.3rem);
+        text-transform: uppercase;
+        color: hsl(var(--primary));
+        margin-top: 0px;
+        font-weight: 200;
+        line-height: 1;
+        max-width: 500px;
+    }
+
     &.title-home{
         font-family: 'Playfair Display', serif;
         font-size: 1rem;
@@ -76,7 +89,7 @@ h2{
         font-size: clamp(2rem, 5vw, 4.3rem);
         text-transform: uppercase;
         color: hsl(var(--primary));
-        margin-top: 10px;
+        margin-top: 5px;
         font-weight: 400;
         line-height: 1.2;
         max-width: 700px;
@@ -91,9 +104,9 @@ h2{
     padding: 32px 4%;
     padding-top: clamp(0px, vw, 32px);
     background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.418), rgb(255, 255, 255)), 
+        linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)), 
         url(../assets/hero-luxury.jpg);
-    background-size: cover; 
+    background-size: clamp(100%, 1200px); 
     background-position: 80%;
     
     .home-image{

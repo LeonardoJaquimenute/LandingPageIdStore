@@ -1,63 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
     <title>ID STORE AM</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
+      <nav class="navbar">
+        <img src="src/assets/idStore.jpg" alt="Logo Id Store" class="logo" />
 
-            <img 
-                src="src/assets/idStore.jpg" 
-                alt="Logo Id Store" 
-                class="logo"
-            >
+        <p class="mobile">ID STORE</p>
 
-            <p class="mobile">ID STORE AM</p>
+        <button class="btn btn-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-            <button class="btn btn-mobile">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <ul id="nav-links" class="">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+        </ul>
 
-            <ul id="nav-links" class="">
-                <li><a href="#inicio" >Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-            </ul>
-
-            <a href="#" class="btn btn-default">
-                Fale Conosco
-            </a>
-        </nav>
+        <a href="#" class="btn btn-default"> Fale Conosco </a>
+      </nav>
     </header>
     <!-- Main -->
     <main id="container">
-        <!-- Home -->
-         <section id="inicio">
-            
-            <img 
-            src="" 
-            alt=""
-            class="home-image">
+      <!-- Home -->
+      <section id="inicio">
+        <img src="" alt="" class="home-image" />
 
-            <p class="subtitle-home">Identidade · Autenticidade · Exclusividade</p>
-            <h1 class="title-home">A loja que garante 
-                <br>identidade.</h1>
-            <h2 class="title-home">As marcas que definem o estilo.</h2>
-            <div class="home-actions">
-                <a href="#produtos" class="btn btn-default">Conhecer</a>
-                <a href="#contato" class="btn btn-outlined">WhatsApp</a>
-            </div>
-
-         </section>
+        <p class="subtitle-home">Identidade · Autenticidade · Exclusividade</p>
+        <h1 class="title-home">A loja que garante <br />identidade.</h1>
+        <h2 class="title-home">As marcas que definem o estilo.</h2>
+        <div class="home-actions">
+          <a
+            href="https://wa.me/+5592994342006/?text=Olá, gostaria de mais informações sobre os produtos da ID STORE AM."
+            class="btn btn-outlined"
+            >WhatsApp</a
+          >
+          <a href="#sobre" class="btn btn-default">Conhecer</a>
+        </div>
+      </section>
+      <!-- Produtos -->
+      <section id="produtos">
+        <h2 class="title-section">Nossos Produtos</h2>
+        
+      </section>
     </main>
 
-
     <script src="src/javascript/script.js"></script>
-</body>
+  </body>
 </html>
