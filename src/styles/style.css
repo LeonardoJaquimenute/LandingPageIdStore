@@ -136,6 +136,8 @@ h2{
         url(../assets/unnamed.jpg);
     background-size: clamp(100%, 1600px, 2000px); 
     background-position: 80%;
+    background-repeat: no-repeat;
+    
     
     .home-image{
         width: clamp(300px, 50%, 400px);
