@@ -92,7 +92,7 @@ h2{
     padding-top: clamp(0px, vw, 32px);
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.418), rgb(255, 255, 255)), 
-        url(../assets/hero-luxury.jpg);
+        url(../assets/unnamed.jpg);
     background-size: cover; 
     background-position: 80%;
     
