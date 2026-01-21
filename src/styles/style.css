@@ -162,12 +162,6 @@ h2{
     align-items: center;
     gap: 32px;
     min-height: calc(100vh - 96px);
-    
-    .trending-card-image{
-        width: 200px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
 
     .trending-cards{
 
@@ -180,16 +174,13 @@ h2{
         }
 
         .trending-card-description{
-            display: flex;
+            display: flex;    
             flex-direction: column;
             text-align: center;
-            font-family: 'Inter', sans-serif;
             font-size: 1.3rem;
-            color: hsl(var(--secondary));
-            margin-top: 8px;
+            color: hsl(var(--primary));
+            margin-top: 12px;
             font-weight: 200;
-            max-width: 200px;
-            text-align: center;
         }
     }
 }
