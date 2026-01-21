@@ -106,14 +106,12 @@ h2{
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)), 
         url(../assets/unnamed.jpg);
-    background-size: clamp(100%, 1200px); 
+    background-size: clamp(100%, 1500px, 2000px); 
     background-position: 80%;
     
     .home-image{
         width: clamp(300px, 50%, 400px);
     }
-
-
 }
  
 #container{
