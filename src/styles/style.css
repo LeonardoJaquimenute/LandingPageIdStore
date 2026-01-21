@@ -63,14 +63,9 @@ a.btn {
 }
 
 
-<<<<<<< Updated upstream
 h2 {
 
     &.title-section {
-=======
-h2{
-    &.title-section{
->>>>>>> Stashed changes
         font-family: 'Playfair Display', serif;
         text-align: center;
         font-size: clamp(1.5rem, 5vw, 4.3rem);
@@ -96,11 +91,7 @@ h2{
     }
 }
 
-<<<<<<< Updated upstream
 .title-home {
-=======
-.title-home{
->>>>>>> Stashed changes
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size: clamp(2rem, 5vw, 4.3rem);
@@ -112,7 +103,6 @@ h2{
     max-width: 700px;
 }
 
-<<<<<<< Updated upstream
 .title {
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
@@ -132,18 +122,8 @@ h2{
         bottom: 0px;
         border-radius: 30px;
     }
-=======
-h2.title{
-    text-align: center;
-    font-family: 'Inter', serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-    color: #111;
-}
->>>>>>> Stashed changes
+
+}    
 
 h2.title::after {
     content: "";
@@ -163,17 +143,10 @@ h2.title::after {
     min-height: calc(100vh - 96px);
     padding: 32px 4%;
     padding-top: clamp(0px, vw, 32px);
-<<<<<<< Updated upstream
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)),
         url(../assets/unnamed.jpg);
     background-size: clamp(100%, 1600px, 2000px);
-=======
-    background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)), 
-    url(../assets/unnamed.jpg);
-    background-size: clamp(100%, 1600px, 2000px); 
->>>>>>> Stashed changes
     background-position: 80%;
     background-repeat: no-repeat;
 
@@ -193,7 +166,6 @@ h2.title::after {
     background-color: hsl(var(--background));
 }
 
-<<<<<<< Updated upstream
 
     .carrosel {
         padding: 25px 0px;
@@ -254,24 +226,12 @@ h2.title::after {
         background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.28.jpeg');
     }
 
-    @media (min-width: 768px) {
-        #trending {
-            .trending-cards {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 24px;
-            }
-        }
-=======
-/* ===== ABOUT SECTION ===== */
-.about {
+    .about {
     padding: 80px 20px;
     background-color: #faf8f5;
     text-align: center;
 }
 
-/* Título principal */
 .about h2 {
     font-family: 'Inter', serif;
     font-size: 2rem;
@@ -282,7 +242,6 @@ h2.title::after {
     color: #111;
 }
 
-/* Linha decorativa abaixo do título */
 .about h2::after {
     content: "";
     display: block;
@@ -293,14 +252,12 @@ h2.title::after {
     border-radius: 2px;
 }
 
-/* Subtítulo */
 .about .subtitle {
     font-size: 16px;
     color: #555;
     margin-bottom: 48px;
 }
 
-/* ===== IMAGEM ===== */
 .about-image {
     display: flex;
     justify-content: center;
@@ -314,7 +271,6 @@ h2.title::after {
     filter: grayscale(100%);
 }
 
-/* ===== CARDS ===== */
 .about-cards {
     display: flex;
     justify-content: center;
@@ -336,7 +292,6 @@ h2.title::after {
     transform: translateY(-6px);
 }
 
-/* Títulos dos cards */
 .about-card h3 {
     font-family: ('Inter', serif);
     font-size: 1.5rem;
@@ -345,14 +300,12 @@ h2.title::after {
     color: hsl(var(--background));
 }
 
-/* Texto dos cards */
 .about-card p {
     font-size: 15px;
     line-height: 1.7;
     color: hsl(var(--secondary));
 }
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
     .about {
         padding: 60px 16px;
@@ -368,23 +321,24 @@ h2.title::after {
 
     .about-card {
         max-width: 100%;
->>>>>>> Stashed changes
     }
 
-<<<<<<< Updated upstream
+}
+
+    @media (min-width: 768px) {
+        #trending {
+            .trending-cards {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+        }
+    }
+
     @keyframes spin {
         from {
             translate: 0;
-=======
-
-@media (min-width: 768px){
-    #trending{
-        .trending-cards{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 24px;
->>>>>>> Stashed changes
         }
 
         to {
