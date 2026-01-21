@@ -2,7 +2,7 @@
 
 header{
     background-color: hsl(var(--background));
-    padding: 12px 4%;
+    padding: 24px 4%;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -42,16 +42,30 @@ header{
         }
 
         ul{
-            display: none;
+           display: none;
             list-style: none;
-            gap: 0.5rem;
             flex-direction: column;
-            width: 100%;
-            position: absolute;
-            top: 80px;
-            left: 0;
-            padding: 1rem;
             background-color: hsl(var(--background));
+            padding: 1rem;
+            gap: 1rem; /* Ajuste o espaçamento entre os links se quiser */
+
+            /* --- MUDANÇAS AQUI --- */
+    
+            position: absolute;
+            
+            /* 1. Cola o menu logo abaixo do texto/logo */
+            top: 100%; 
+            
+            /* 2. Empurra para baixo exatamente o tamanho do padding do header (24px) 
+            para alinhar com a borda branca */
+            margin-top: 15px; 
+            
+            /* 3. Força a largura total da tela (ignorando o padding do pai) */
+            width: 100vw; 
+            
+            /* 4. Centraliza essa barra larga para cobrir os dois lados igualmente */
+            left: 50%;
+            transform: translateX(-50%);
 
             &.show{
                 display: flex;
@@ -89,6 +103,9 @@ header{
     
 @media(min-width: 768px){
     header{
+
+        padding: 12px 4%;
+
         .navbar{
 
             justify-content: space-between;
