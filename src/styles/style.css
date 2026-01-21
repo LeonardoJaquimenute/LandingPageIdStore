@@ -108,14 +108,15 @@ h2{
         text-transform: uppercase;
         color: hsl(var(--primary));
         font-weight: 200;
+        margin-top: 7px;
         position: relative;
 
         &::before{
             content: '';
             display: block;
             position: absolute;
-            width: 80px;
-            height: 3px;
+            width: 60px;
+            height: 4px;
             background-color: hsl(var(--gold));
             bottom: 0px;
             border-radius: 30px;
@@ -149,7 +150,7 @@ h2{
         gap: 12px;
     }
 }
- 
+
 #container{
     background-color: hsl(var(--background));
 }
@@ -161,4 +162,34 @@ h2{
     align-items: center;
     gap: 32px;
     min-height: calc(100vh - 96px);
+    
+    .trending-card-image{
+        width: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .trending-cards{
+
+        position: relative;
+
+        img{
+            width: clamp(300px, 5vw, 600px);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .trending-card-description{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            color: hsl(var(--secondary));
+            margin-top: 8px;
+            font-weight: 200;
+            max-width: 200px;
+            text-align: center;
+        }
+    }
 }
