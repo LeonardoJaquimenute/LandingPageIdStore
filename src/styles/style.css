@@ -1,248 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-@import './variables.css';
+@import "./variables.css";
 
-@import './navbar.css';
+@import "./navbar.css";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 a.btn {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: transparent;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .btn-mobile {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .btn-default {
-    color: hsl(var(--primary));
-    transition: background-color 0.3s ease;
-    transition: all 0.2s ease;
+  color: hsl(var(--primary));
+  transition: background-color 0.3s ease;
+  transition: all 0.2s ease;
 
-    &:hover {
-        color: hsl(var(--gold));
-        border-bottom: 1px solid hsl(var(--gold));
-        border-radius: 0px;
-    }
+  &:hover {
+    color: hsl(var(--gold));
+    border-bottom: 1px solid hsl(var(--gold));
+    border-radius: 0px;
+  }
 }
 
 .btn-outlined {
-    border: 2px solid hsl(var(--primary));
-    background-color: hsl(var(--primary));
-    color: hsl(var(--background));
-    transition: background-color 0.3s ease, color 0.3s ease;
+  border: 2px solid hsl(var(--primary));
+  background-color: hsl(var(--primary));
+  color: hsl(var(--background));
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 
-    &:hover {
-        background-color: transparent;
-        color: hsl(var(--primary));
-    }
+  &:hover {
+    background-color: transparent;
+    color: hsl(var(--primary));
+  }
 }
 
 .subtitle-home {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: hsl(var(--secondary));
-    margin-top: 130px;
-    opacity: 0.8;
-    font-weight: 250;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: hsl(var(--secondary));
+  margin-top: 130px;
+  opacity: 0.8;
+  font-weight: 250;
 }
-
 
 h2 {
-
-    &.title-section {
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-        font-size: clamp(1.5rem, 5vw, 4.3rem);
-        text-transform: uppercase;
-        color: hsl(var(--primary));
-        margin-top: 0px;
-        font-weight: 200;
-        line-height: 1;
-        max-width: 500px;
-    }
-
-    &.title-home {
-        font-family: 'Playfair Display', serif;
-        font-size: 1rem;
-        color: hsl(var(--secondary));
-        margin-top: 10px;
-        font-weight: 500;
-        max-width: 600px;
-        text-align: center;
-        opacity: 0.9;
-        margin: 0px;
-
-    }
-}
-
-.title-home {
-    font-family: 'Playfair Display', serif;
+  &.title {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 4.3rem);
-    text-transform: uppercase;
-    color: hsl(var(--primary));
-    margin-top: 5px;
-    font-weight: 400;
-    line-height: 1.2;
-    max-width: 700px;
-}
-
-.title {
-    font-family: 'Inter', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: hsl(var(--primary));
-    font-weight: 200;
-    margin-top: 7px;
-    position: relative;
-
-    &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 60px;
-        height: 4px;
-        background-color: hsl(var(--gold));
-        bottom: 0px;
-        border-radius: 30px;
-    }
-
-}    
-
-h2.title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #c9a96a;
-    margin: 12px auto 0;
-    border-radius: 2px;
-}
-
-#inicio {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    min-height: calc(100vh - 96px);
-    padding: 32px 4%;
-    padding-top: clamp(0px, vw, 32px);
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)),
-        url(../assets/unnamed.jpg);
-    background-size: clamp(100%, 1600px, 2000px);
-    background-position: 80%;
-    background-repeat: no-repeat;
-
-
-    .home-image {
-        width: clamp(300px, 50%, 400px);
-    }
-
-    .home-actions {
-        display: flex;
-        margin-top: 12px;
-        gap: 12px;
-    }
-}
-
-#container {
-    background-color: hsl(var(--background));
-}
-
-
-    .carrosel {
-        padding: 25px 0px;
-        margin: 5px left;
-        width: cover;
-        display: flex;
-        overflow-x: auto;
-    }
-
-    .carrosel::-webkit-scrollbar {
-        display: none;
-    }
-
-    .group {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        animation: spin 20s infinite linear;
-        padding-right: 1em;
-    }
-
-    .card {
-        flex: 0 0 5em;
-        height: 7em;
-        padding: 1em;
-        background: hsl(var(--primary));
-        font-size: 3rem;
-        border-radius: .2em;
-        text-align: center;
-        align-content: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .group .card:nth-child(1) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.21.jpeg');
-    }
-
-    .group .card:nth-child(2) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.23.jpeg');
-    }
-
-    .group .card:nth-child(3) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.24.jpeg');
-    }
-
-    .group .card:nth-child(4) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.26.jpeg');
-    }
-
-    .group .card:nth-child(5) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.27.jpeg');
-    }
-
-    .group .card:nth-child(6) {
-        background-image: url('../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.28.jpeg');
-    }
-
-    .about {
-    padding: 80px 20px;
-    background-color: #faf8f5;
-    text-align: center;
-}
-
-.about h2 {
-    font-family: 'Inter', serif;
+    font-family: "Inter", serif;
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 2px;
     margin-bottom: 12px;
     color: #111;
-}
+  }
 
-.about h2::after {
+  &.title::after {
     content: "";
     display: block;
     width: 60px;
@@ -250,98 +84,237 @@ h2.title::after {
     background-color: #c9a96a;
     margin: 12px auto 0;
     border-radius: 2px;
+  }
+
+  &.title-home {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: hsl(var(--secondary));
+    margin-top: 10px;
+    font-weight: 500;
+    max-width: 600px;
+    text-align: center;
+    opacity: 0.9;
+    margin: 0px;
+  }
+}
+
+.title-home {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4.3rem);
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-height: calc(100vh - 96px);
+  padding: 32px 4%;
+  padding-top: clamp(0px, vw, 32px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)),
+    url(../assets/unnamed.jpg);
+  background-size: clamp(100%, 1600px, 2000px);
+  background-position: 80%;
+  background-repeat: no-repeat;
+
+  .home-image {
+    width: clamp(300px, 50%, 400px);
+  }
+
+  .home-actions {
+    display: flex;
+    margin-top: 12px;
+    gap: 12px;
+  }
+}
+
+#container {
+  background-color: hsl(var(--background));
+}
+
+.carrosel {
+  padding: 25px 0px;
+  margin: 5px left;
+  width: cover;
+  display: flex;
+  overflow-x: auto;
+}
+
+.carrosel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 20s infinite linear;
+  padding-right: 1em;
+}
+
+.card {
+  flex: 0 0 5em;
+  height: 7em;
+  padding: 1em;
+  background: hsl(var(--primary));
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.group .card:nth-child(1) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.21.jpeg");
+}
+
+.group .card:nth-child(2) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.23.jpeg");
+}
+
+.group .card:nth-child(3) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.24.jpeg");
+}
+
+.group .card:nth-child(4) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.26.jpeg");
+}
+
+.group .card:nth-child(5) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.27.jpeg");
+}
+
+.group .card:nth-child(6) {
+  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.28.jpeg");
+}
+
+.about {
+  padding: 80px 20px;
+  background-color: #faf8f5;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: "Inter", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c9a96a;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .about .subtitle {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 48px;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 48px;
 }
 
 .about-image {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
 }
 
 .about-image img {
-    width: 260px;
-    max-width: 100%;
-    border-radius: 16px;
-    filter: grayscale(100%);
+  width: 260px;
+  max-width: 100%;
+  border-radius: 16px;
+  filter: grayscale(100%);
 }
 
 .about-cards {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .about-card {
-    background-color: #d4b37f;
-    padding: 28px;
-    border-radius: 22px;
-    max-width: 420px;
-    text-align: left;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease;
+  background-color: #d4b37f;
+  padding: 28px;
+  border-radius: 22px;
+  max-width: 420px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
 }
 
 .about-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .about-card h3 {
-    font-family: ('Inter', serif);
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 14px;
-    color: hsl(var(--background));
+  font-family: ("Inter", serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: hsl(var(--background));
 }
 
 .about-card p {
-    font-size: 15px;
-    line-height: 1.7;
-    color: hsl(var(--secondary));
+  font-size: 15px;
+  line-height: 1.7;
+  color: hsl(var(--secondary));
 }
 
 @media (max-width: 768px) {
-    .about {
-        padding: 60px 16px;
-    }
+  .about {
+    padding: 60px 16px;
+  }
 
-    .about h2 {
-        font-size: 26px;
-    }
+  .about h2 {
+    font-size: 26px;
+  }
 
-    .about-image img {
-        width: 220px;
-    }
+  .about-image img {
+    width: 220px;
+  }
 
-    .about-card {
-        max-width: 100%;
-    }
-
+  .about-card {
+    max-width: 100%;
+  }
 }
 
-    @media (min-width: 768px) {
-        #trending {
-            .trending-cards {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 24px;
-            }
-        }
+@media (min-width: 768px) {
+  #trending {
+    .trending-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
     }
+  }
+}
 
-    @keyframes spin {
-        from {
-            translate: 0;
-        }
+@keyframes spin {
+  from {
+    translate: 0;
+  }
 
-        to {
-            translate: -100%;
-        }
-    }
+  to {
+    translate: -100%;
+  }
+}

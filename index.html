@@ -1,125 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/style.css" />
     <title>ID STORE AM</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <nav class="navbar">
+      <nav class="navbar">
+        <div class="brand-group">
+          <img
+            src="src/assets/idStore-removebg-preview.png"
+            alt="Logo Id Store"
+            class="logo"
+          />
+          <p class="mobile">ID STORE</p>
+        </div>
+        <button class="btn btn-mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-                <div class="brand-group">
-                    <img 
-                        src="src/assets/idStore-removebg-preview.png" 
-                        alt="Logo Id Store" 
-                        class="logo"
-                    >
-                    <p class="mobile">ID STORE</p> 
-                </div>
-            <button class="btn btn-mobile">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <ul id="nav-links" class="">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#trending">Produtos</a></li>
+        </ul>
 
-            <ul id="nav-links" class="">
-                <li><a href="#inicio" >Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#trending">Produtos</a></li>
-            </ul>
-
-            <a href="#" class="btn btn-default">
-                Fale Conosco
-            </a>
-        </nav>
+        <a href="#" class="btn btn-default"> Fale Conosco </a>
+      </nav>
     </header>
     <!-- Main -->
     <main id="container">
-        <!-- Home -->
-         <section id="inicio">
-            
-            <img 
-            src="" 
-            alt=""
-            class="home-image">
+      <!-- Home -->
+      <section id="inicio">
+        <p class="subtitle-home">Identidade · Autenticidade · Exclusividade</p>
+        <h1 class="title-home">A loja que garante <br />identidade.</h1>
+        <h2 class="title-home">As marcas que definem o estilo.</h2>
+        <div class="home-actions">
+          <a href="#sobre" class="btn btn-default">Conhecer</a>
+          <a href="#contato" class="btn btn-outlined">WhatsApp</a>
+        </div>
+      </section>
 
-            <p class="subtitle-home">Identidade · Autenticidade · Exclusividade</p>
-            <h1 class="title-home">A loja que garante 
-                <br>identidade.</h1>
-            <h2 class="title-home">As marcas que definem o estilo.</h2>
-            <div class="home-actions">
-                <a href="#sobre" class="btn btn-default">Conhecer</a>
-                <a href="#contato" class="btn btn-outlined">WhatsApp</a>
-            </div>
+      <!-- about -->
+      <section class="about">
+        <h2>Sobre Nós</h2>
 
-         </section>
+        <div class="about-image">
+          <img src="src/assets/idStore-removebg-preview.png" />
+        </div>
 
-         <!-- about -->
-         <section class="about">
-    <h2>Sobre Nós</h2>
-
-    <div class="about-image">
-        <img src="src/assets/idStore-removebg-preview.png">
-    </div>
-
-    <div class="about-cards">
-        <div class="about-card">
+        <div class="about-cards">
+          <div class="about-card">
             <h3>Nossa História</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, ab! Aliquam non pariatur temporibus aut accusamus molestiae quam, laboriosam numquam dolores dignissimos officia amet debitis nam quo rem ex perspiciatis.</p>
-        </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+              ab! Aliquam non pariatur temporibus aut accusamus molestiae quam,
+              laboriosam numquam dolores dignissimos officia amet debitis nam
+              quo rem ex perspiciatis.
+            </p>
+          </div>
 
-        <div class="about-card">
+          <div class="about-card">
             <h3>Nosso Propósito</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex a autem reprehenderit soluta commodi, labore ducimus vero optio dignissimos quis voluptates illo sint ea officia doloremque quo nisi architecto voluptate.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex a
+              autem reprehenderit soluta commodi, labore ducimus vero optio
+              dignissimos quis voluptates illo sint ea officia doloremque quo
+              nisi architecto voluptate.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
-
-         <!-- trending -->
-         <section id="trending" >
-            <h2 class="title">Em alta</h2>
-                <div class="carrosel">
-                    <div class="group">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                    </div>
-                    <div aria-hidden class="group">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                    </div>
-                    <div aria-hidden class="group">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                    </div>
-                    <div aria-hidden class="group">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                    </div>
-                </div>
-         </section>
-
+      <!-- trending -->
+      <section id="trending">
+        <h2 class="title">Em alta</h2>
+        <div class="carrosel">
+          <div class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+          <div aria-hidden class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+          <div aria-hidden class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+          <div aria-hidden class="group">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-
     <script src="src/javascript/script.js"></script>
-</body>
+  </body>
 </html>
