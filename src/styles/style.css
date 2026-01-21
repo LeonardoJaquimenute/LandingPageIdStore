@@ -102,6 +102,27 @@ h2{
         max-width: 700px;
 }
 
+.title{
+        font-family: 'Inter', sans-serif;
+        font-size:2.5rem;
+        text-transform: uppercase;
+        color: hsl(var(--primary));
+        font-weight: 200;
+        position: relative;
+
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: hsl(var(--gold));
+            bottom: 0px;
+            border-radius: 30px;
+        }
+
+}
+
 #inicio{
     display: flex;
     flex-direction: column;
@@ -131,13 +152,11 @@ h2{
     background-color: hsl(var(--background));
 }
 
-
-#products-container{
+#trending{
+    padding: 32px 4%;
     display: flex;
-    padding:32px 4%;
     flex-direction: column;
     align-items: center;
     gap: 32px;
     min-height: calc(100vh - 96px);
-    
 }
