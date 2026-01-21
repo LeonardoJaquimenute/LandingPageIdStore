@@ -9,8 +9,26 @@ header{
     
     .navbar{
         display: flex;
-        justify-content: space-between;
+        justify-content: center; 
         align-items: center;
+        position: relative;
+
+        
+        .brand-group {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                width: 100%;             
+                position: relative;      
+    
+                flex-direction: row;     
+            }
+
+            .logo {
+                width: 70px;
+                position: absolute;      
+                left: 0;                 
+            }
 
         p{
             font-family: Playfair Display, serif;
@@ -60,12 +78,29 @@ header{
             display: none;
             font-size: 0.7rem;
         }
+
+        .btn-mobile {
+            position: absolute;
+            right: 0;             
+        }
+
     }   
 }
     
 @media(min-width: 768px){
     header{
         .navbar{
+
+            justify-content: space-between;
+           
+            .brand-group {
+                width: auto;      
+            }
+
+            .logo {
+                position: static; 
+            }
+
             ul{
                 display: flex;
                 position: static;
