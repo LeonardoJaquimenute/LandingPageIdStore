@@ -138,7 +138,7 @@ h2 {
 }
 
 #container {
-  background-color: hsl(var(--background));
+  background-color: #ffffff;
 }
 
 .carrosel {
@@ -202,7 +202,7 @@ h2 {
 
 .about {
   padding: 80px 20px;
-  background-color: #faf8f5;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -296,6 +296,63 @@ h2 {
   .about-card {
     max-width: 100%;
   }
+}
+
+/* --- Seção de Feedbacks --- */
+#feedbacks {
+    padding: 32px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background-color: #ffffff; 
+}
+
+.feedback-gallery {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto; 
+    padding-bottom: 20px; 
+    scroll-snap-type: x mandatory; 
+}
+
+.feedback-gallery::-webkit-scrollbar {
+    height: 6px;
+}
+.feedback-gallery::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary));
+    border-radius: 4px;
+}
+.feedback-gallery::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+.feedback-item {
+    min-width: 260px; 
+    max-width: 280px;
+    scroll-snap-align: center; 
+    transition: transform 0.3s ease;
+}
+
+.feedback-item img {
+    width: 100%;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0, 0.15); 
+    border: 1px solid rgba(0,0,0, 0.05); 
+    display: block;
+}
+
+.feedback-item:hover {
+    transform: translateY(-5px); 
+}
+
+@media (min-width: 768px) {
+    .feedback-gallery {
+        justify-content: center;
+        flex-wrap: wrap; 
+        overflow-x: visible; 
+    }
 }
 
 @media (min-width: 768px) {
