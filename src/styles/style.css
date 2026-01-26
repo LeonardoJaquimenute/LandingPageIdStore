@@ -200,103 +200,86 @@ h2 {
   background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.28.jpeg");
 }
 
-.about {
-  padding: 80px 20px;
-  background-color: #ffffff;
+.about-header {
   text-align: center;
+  margin-bottom: 80px;
 }
 
-.about h2 {
-  font-family: "Inter", serif;
-  font-size: 2rem;
+.about-title {
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  color: #111;
-}
-
-.about h2::after {
-  content: "";
+  letter-spacing: 3px;
+  color: #1a1a1a;
   display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #c9a96a;
-  margin: 12px auto 0;
-  border-radius: 2px;
-}
-
-.about .subtitle {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 48px;
-}
-
-.about-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 48px;
-}
-
-.about-image img {
-  width: 260px;
-  max-width: 100%;
-  border-radius: 16px;
-  filter: grayscale(100%);
-}
-
-.about-cards {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.about-card {
-  background-color: #d4b37f;
-  padding: 28px;
-  border-radius: 22px;
-  max-width: 420px;
-  text-align: left;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-6px);
-}
-
-.about-card h3 {
-  font-family: ("Inter", serif);
-  font-size: 1.5rem;
-  font-weight: 500;
   margin-bottom: 14px;
-  color: hsl(var(--background));
 }
 
-.about-card p {
-  font-size: 15px;
-  line-height: 1.7;
-  color: hsl(var(--secondary));
+.about-title-line {
+  width: 42px;
+  height: 2px;
+  background: #c6ad8f;
+  display: block;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .about {
-    padding: 60px 16px;
+.about-quote {
+  padding: 100px 6%;
+  background: #faf9f7;
+}
+
+.about-quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* Card */
+.quote-block {
+  background: #ffffff;
+  padding: 48px 42px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Linha superior */
+.quote-line {
+  width: 48px;
+  height: 3px;
+  background: #c6ad8f;
+  display: block;
+  margin-bottom: 28px;
+}
+
+/* Texto principal */
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+/* Assinatura */
+.quote-author {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .about-quote-container {
+    grid-template-columns: 1fr;
   }
 
-  .about h2 {
-    font-size: 26px;
-  }
-
-  .about-image img {
-    width: 220px;
-  }
-
-  .about-card {
-    max-width: 100%;
+  .quote-text {
+    font-size: 20px;
   }
 }
+
 
 /* --- Seção de Feedbacks --- */
 #feedbacks {
@@ -347,6 +330,223 @@ h2 {
     transform: translateY(-5px); 
 }
 
+.proposal {
+  padding: 80px 6%;
+}
+
+.proposal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Texto */
+.overline {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #c6ad8f;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.proposal-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.proposal-text h2 em {
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+
+/* Lista */
+.features {
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f0e7da;
+  display: inline-block;
+}
+
+/* Card */
+.proposal-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-card {
+  background: #fff;
+  padding: 48px;
+  max-width: 420px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.quote-line {
+  width: 50px;
+  height: 3px;
+  background: #c6ad8f;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.quote-card blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.quote-footer {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.proposal-quote {
+  justify-content: flex-start;
+}
+
+.exclusivity {
+  padding: 120px 6%;
+  background: #faf9f7;
+  text-align: center;
+}
+
+.exclusivity-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Overline */
+.exclusivity-overline {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c6ad8f;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.exclusivity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.exclusivity-title em {
+  font-style: italic;
+}
+
+/* Textos */
+.exclusivity-subtitle {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.exclusivity-text {
+  font-size: 15px;
+  color: #1a1a1a;
+  margin-bottom: 36px;
+}
+
+/* Linha */
+.exclusivity-line {
+  width: 48px;
+  height: 2px;
+  background: #c6ad8f;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+/* Ações */
+.exclusivity-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Botão primário */
+.btn-primary {
+  background: #111;
+  color: #fff;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #000;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  border: 1px solid #111;
+  color: #111;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .exclusivity-title {
+    font-size: 34px;
+  }
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .proposal-container {
+    grid-template-columns: 1fr;
+  }
+
+
 @media (min-width: 768px) {
     .feedback-gallery {
         justify-content: center;
@@ -374,4 +574,5 @@ h2 {
   to {
     translate: -100%;
   }
+}
 }
