@@ -8,11 +8,26 @@
 
 @import "./footer.css";
 
+@import "./about.css";
+
+@import "./proposal.css";
+
+@import "./exclusivity.css";
+
+@import "./trending.css";
+
+@import "./feedbacks.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
 }
 
 a.btn {
@@ -125,7 +140,7 @@ h2 {
   padding-top: clamp(0px, vw, 32px);
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.616), rgb(255, 255, 255)),
-    url(../assets/unnamed.jpg);
+    url(../assets/imagemHero.jpg);
   background-size: clamp(100%, 1600px, 2000px);
   background-position: 80%;
   background-repeat: no-repeat;
@@ -143,219 +158,6 @@ h2 {
 
 #container {
   background-color: #ffffff;
-}
-
-.about-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.about-title {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #1a1a1a;
-  display: block;
-  margin-bottom: 14px;
-}
-
-.about-title-line {
-  width: 42px;
-  height: 2px;
-  background: #c6ad8f;
-  display: block;
-  margin: 0 auto;
-}
-
-.about-quote {
-  padding: 100px 6%;
-  background: #ffffff;
-}
-
-.about-quote-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
-}
-
-/* Card */
-.quote-block {
-  background: #ffffff;
-  padding: 48px 42px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
-}
-
-/* Linha superior */
-.quote-line {
-  width: 48px;
-  height: 3px;
-  background: #c6ad8f;
-  display: block;
-  margin-bottom: 28px;
-}
-
-/* Texto principal */
-.quote-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-style: italic;
-  line-height: 1.5;
-  color: #1a1a1a;
-  margin-bottom: 32px;
-}
-
-/* Assinatura */
-.quote-author {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 12px;
-  color: #7a7a7a;
-}
-
-/* Responsivo */
-@media (max-width: 900px) {
-  .about-quote-container {
-    grid-template-columns: 1fr;
-  }
-
-  .quote-text {
-    font-size: 20px;
-  }
-}
-
-/* --- Seção de Produtos em Alta --- */
-.trending-header {
-  text-align: center;
-  margin-bottom: 40px; 
-}
-
-.trending-title {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #1a1a1a;
-  display: block;
-  margin-bottom: 14px;
-  font-weight: 400; 
-}
-
-.trending-line {
-  width: 42px;
-  height: 2px;
-  background: #c6ad8f; 
-  display: block;
-  margin: 0 auto;
-}
-
-/* --- Ações da Seção Produtos em Alta --- */
-.trending-actions {
-    display: flex;
-    justify-content: center; 
-    margin-top: 48px; 
-    margin-bottom: 58px; 
-    padding: 0 4%; 
-}
-
-@media (max-width: 480px) {
-    .trending-actions .btn-secondary {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-/* --- Seção de Feedbacks --- */
-#feedbacks {
-    padding: 80px 0; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    background-color: #000000ec; 
-}
-
-/* Cabeçalho */
-.feedbacks-header {
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 0 4%; 
-}
-
-.feedbacks-overline {
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #949393;
-    display: block;
-    margin-bottom: 16px;
-}
-
-.feedbacks-title {
-    font-family: "Playfair Display", serif;
-    font-size: 38px;
-    font-weight: 400;
-    color: #ffffff; 
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.feedbacks-line {
-    width: 50px;
-    height: 1px;
-    background: #c6ad8f; 
-    display: block;
-    margin: 0 auto;
-    opacity: 0.7;
-}
-
-/* --- GALERIA: Comportamento Mobile (Padrão) --- */
-.feedback-gallery {
-    display: flex;
-    gap: 24px;
-    width: 100%;
-    
-    overflow-x: auto;
-    
-    flex-wrap: nowrap;
-    
-    justify-content: flex-start;
-    
-    padding: 20px 4%; 
-    
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; 
-}
-
-.feedback-gallery::-webkit-scrollbar {
-    display: none; 
-}
-
-/* --- CARTÕES DOS PRINTS --- */
-.feedback-item {
-    flex: 0 0 auto;
-    width: 300px; 
-    max-width: 85vw; 
-}
-
-.feedback-item:hover {
-    transform: translateY(-5px);
-    border-color: #c6ad8f; 
-}
-
-.feedback-item img {
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    opacity: 0.9;
-    transition: opacity 0.3s;
-}
-
-.feedback-item:hover img {
-    opacity: 1;
 }
 
 .proposal {
@@ -462,6 +264,40 @@ h2 {
   justify-content: flex-start;
 }
 
+
+/* Botão primário */
+.btn-primary {
+  background: #111;
+  color: #fff;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #000;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  border: 1px solid #111;
+  color: #111;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #111;
+  color: #fff;
+}
+
 .exclusivity {
   padding: 120px 6%;
   background: #ffffff;
@@ -527,38 +363,178 @@ h2 {
   flex-wrap: wrap;
 }
 
-/* Botão primário */
-.btn-primary {
-  background: #111;
-  color: #fff;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 2px;
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-size: 14px;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  letter-spacing: 3px;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 14px;
 }
 
-.btn-primary:hover {
-  background: #000;
+.about-title-line {
+  width: 42px;
+  height: 2px;
+  background: #c6ad8f;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Botão secundário */
-.btn-secondary {
-  border: 1px solid #111;
-  color: #111;
-  padding: 16px 32px;
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 2px;
+.about-quote {
+  padding: 100px 6%;
+  background: #ffffff;
+}
+
+.about-quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* Card */
+.quote-block {
+  background: #ffffff;
+  padding: 48px 42px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Linha superior */
+.quote-line {
+  width: 48px;
+  height: 3px;
+  background: #c6ad8f;
+  display: block;
+  margin-bottom: 28px;
+}
+
+/* Texto principal */
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+/* Assinatura */
+.quote-author {
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #7a7a7a;
 }
 
-.btn-secondary:hover {
-  background: #111;
-  color: #fff;
+/* --- Seção de Feedbacks --- */
+#feedbacks {
+    padding: 80px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #000000ec; 
 }
+
+/* Cabeçalho */
+.feedbacks-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 4%; 
+}
+
+.feedbacks-overline {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #949393;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.feedbacks-title {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff; 
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.feedbacks-line {
+    width: 50px;
+    height: 1px;
+    background: #c6ad8f; 
+    display: block;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+/* --- GALERIA: Comportamento Mobile (Padrão) --- */
+.feedback-gallery {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    
+    overflow-x: auto;
+    
+    flex-wrap: nowrap;
+    
+    justify-content: flex-start;
+    
+    padding: 20px 4%; 
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.feedback-gallery::-webkit-scrollbar {
+    display: none; 
+}
+
+/* --- CARTÕES DOS PRINTS --- */
+.feedback-item {
+    flex: 0 0 auto;
+    width: 300px; 
+    max-width: 85vw; 
+}
+
+.feedback-item:hover {
+    transform: translateY(-5px);
+    border-color: #c6ad8f; 
+}
+
+.feedback-item img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.feedback-item:hover img {
+    opacity: 1;
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .about-quote-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+}
+
 
 /* Responsivo */
 @media (max-width: 768px) {
