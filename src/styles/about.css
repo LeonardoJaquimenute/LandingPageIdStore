@@ -1,0 +1,78 @@
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.about-title-line {
+  width: 42px;
+  height: 2px;
+  background: #c6ad8f;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-quote {
+  padding: 100px 6%;
+  background: #ffffff;
+}
+
+.about-quote-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* Card */
+.quote-block {
+  background: #ffffff;
+  padding: 48px 42px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Linha superior */
+.quote-line {
+  width: 48px;
+  height: 3px;
+  background: #c6ad8f;
+  display: block;
+  margin-bottom: 28px;
+}
+
+/* Texto principal */
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}
+
+/* Assinatura */
+.quote-author {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+@media (max-width: 900px) {
+  .about-quote-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+}

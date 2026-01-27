@@ -239,3 +239,13 @@
         font-size: 14px;
     }
 }
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: -100%;
+  }
+}

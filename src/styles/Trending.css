@@ -38,3 +38,14 @@
         text-align: center;
     }
 }
+
+@media (min-width: 768px) {
+  #trending {
+    .trending-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+}

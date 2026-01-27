@@ -1,0 +1,71 @@
+.exclusivity {
+  padding: 120px 6%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.exclusivity-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Overline */
+.exclusivity-overline {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c6ad8f;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Título */
+.exclusivity-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.exclusivity-title em {
+  font-style: italic;
+}
+
+/* Textos */
+.exclusivity-subtitle {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.exclusivity-text {
+  font-size: 15px;
+  color: #1a1a1a;
+  margin-bottom: 36px;
+}
+
+/* Linha */
+.exclusivity-line {
+  width: 48px;
+  height: 2px;
+  background: #c6ad8f;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+/* Ações */
+.exclusivity-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .exclusivity-title {
+    font-size: 34px;
+  }
+}
