@@ -1,0 +1,241 @@
+.carousel-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #c9a961;
+    margin: 15px auto 0;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 20px;
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-item {
+    min-width: calc(50% - 10px);
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.carousel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: #c9a961;
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #c9a961;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.indicator:hover {
+    background: #b89851;
+}
+
+/* Autoplay Progress Bar */
+.autoplay-progress {
+    height: 3px;
+    background: #ddd;
+    margin-top: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.autoplay-progress-bar {
+    height: 100%;
+    background: #c9a961;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .carousel-container {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .carousel-container {
+        padding: 0 45px;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .indicator.active {
+        width: 25px;
+    }
+
+    .carousel-indicators {
+        margin-top: 20px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .carousel-btn.prev {
+        left: 2px;
+    }
+
+    .carousel-btn.next {
+        right: 2px;
+    }
+
+    .carousel-track {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel-item img {
+        height: 220px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+}

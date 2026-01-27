@@ -4,6 +4,10 @@
 
 @import "./navbar.css";
 
+@import "./carousel.css";
+
+@import "./footer.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -139,65 +143,6 @@ h2 {
 
 #container {
   background-color: #ffffff;
-}
-
-.carrosel {
-  padding: 25px 0px;
-  margin: 5px left;
-  width: cover;
-  display: flex;
-  overflow-x: auto;
-}
-
-.carrosel::-webkit-scrollbar {
-  display: none;
-}
-
-.group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  animation: spin 20s infinite linear;
-  padding-right: 1em;
-}
-
-.card {
-  flex: 0 0 5em;
-  height: 7em;
-  padding: 1em;
-  background: hsl(var(--primary));
-  font-size: 3rem;
-  border-radius: 0.2em;
-  text-align: center;
-  align-content: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.group .card:nth-child(1) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.21.jpeg");
-}
-
-.group .card:nth-child(2) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.23.jpeg");
-}
-
-.group .card:nth-child(3) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.24.jpeg");
-}
-
-.group .card:nth-child(4) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.26.jpeg");
-}
-
-.group .card:nth-child(5) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.27.jpeg");
-}
-
-.group .card:nth-child(6) {
-  background-image: url("../assets/produtos/WhatsApp Image 2026-01-21 at 10.46.28.jpeg");
 }
 
 .about-header {
