@@ -1,73 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-header{
+header {
     background-color: hsl(var(--background));
     padding: 24px 4%;
     position: sticky;
     top: 0;
-    z-index: 1;
-    
-    .navbar{
+    z-index: 1000;
+
+    .navbar {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
         position: relative;
 
-        
         .brand-group {
-                display: flex;
-                align-items: center;
-                justify-content: center; 
-                width: 100%;             
-                position: relative;      
-    
-                flex-direction: row;     
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            flex-direction: row;
+        }
 
-            .logo {
-                width: 70px;
-                position: absolute;      
-                left: 0;                 
-            }
+        .logo {
+            width: 70px;
+            position: absolute;
+            left: 0;
+        }
 
-        p{
+        p {
             font-family: Playfair Display, serif;
             font-size: 1.5rem;
             font-weight: 700;
             color: hsl(var(--secondary));
         }
-        
-        .logo{
-            width: 70px;
-        }
 
-        ul{
-           display: none;
-            list-style: none;
+        /* --- MENU MOBILE COM ANIMAÇÃO --- */
+        ul {
+
+            display: flex;
             flex-direction: column;
+            list-style: none;
             background-color: hsl(var(--background));
             padding: 1rem;
-            gap: 1rem; 
-    
+            gap: 1rem;
+
             position: absolute;
-            
-            top: 100%; 
-
-            margin-top: 15px; 
-            
-            width: 100vw; 
-            
+            top: 100%;
+            width: 100vw;
             left: 50%;
-            transform: translateX(-50%);
+            margin-top: 15px;
 
-            &.show{
-                display: flex;
+            /* 2. Estado INICIAL (Escondido) */
+            opacity: 0;
+            visibility: hidden;
+
+            transform: translate(-50%, -20px);
+
+            /* Suavidade da animação */
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+            /* 3. Estado ATIVO (Quando clica no botão) */
+            &.show {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(-50%, 0);
             }
 
-            li{
+            li {
                 text-align: center;
 
-                a{
+                a {
                     color: hsl(var(--secondary));
                     text-decoration: none;
                     font-size: 1rem;
@@ -75,65 +80,68 @@ header{
                     transition: all 0.3s ease;
                     font-family: 'Inter', sans-serif;
 
-                    &:hover{
+                    &:hover {
                         color: hsl(var(--gold));
                         border-bottom: 1px solid hsl(var(--gold));
-                }   
+                    }
+                }
             }
         }
-    }
-        .btn-default{
+
+        .btn-default {
             display: none;
             font-size: 0.7rem;
         }
 
         .btn-mobile {
             position: absolute;
-            right: 0;             
+            right: 0;
+            z-index: 1001;
         }
-
-    }   
+    }
 }
-    
-@media(min-width: 768px){
-    header{
 
+/* --- AJUSTES PARA COMPUTADOR (DESKTOP) --- */
+@media(min-width: 768px) {
+    header {
         padding: 7px 4%;
 
-        .navbar{
-
+        .navbar {
             justify-content: space-between;
-           
+
             .brand-group {
-                width: auto;      
+                width: auto;
             }
 
             .logo {
-                position: static; 
+                position: static;
             }
 
-            ul{
+            ul {
+
                 display: flex;
                 flex-direction: row;
                 gap: 2rem;
                 width: auto;
                 padding: 0;
                 position: absolute;
-                left: 51%;
-                top: 50%;        
-                transform: translate(-50%, -50%); 
-                
                 margin: 0;
-                
-                li{
-                    a{
+
+                opacity: 1;
+                visibility: visible;
+                left: 51%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: none;
+
+                li {
+                    a {
                         font-size: 1.5rem;
                     }
                 }
             }
 
-           
-            .btn-default{
+            .btn-default {
                 display: block;
                 font-size: 1.2rem;
                 padding: 12px 32px;
@@ -144,22 +152,22 @@ header{
 
                 &:hover {
                     color: hsl(var(--gold));
-                    
                     text-decoration: underline;
-                    
                     text-decoration-color: hsl(var(--gold));
-                    
                     text-underline-offset: 6px;
-                    
                     text-decoration-thickness: 2px;
-
                 }
-
             }
 
-            .btn-mobile{
+            .btn-mobile {
                 display: none;
             }
-        }   
+        }
     }
+}
+
+.navbar ul li a.active {
+    color: hsl(var(--gold));
+    border-bottom: 1px solid hsl(var(--gold));
+    font-weight: 600;
 }
