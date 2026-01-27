@@ -256,6 +256,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    /* --- ANIMAÇÃO AO SCROLL (INTERSECTION OBSERVER) --- */
+    const observerOptions = {
+        root: null, // Observa a viewport (janela do navegador)
+        rootMargin: '0px',
+        threshold: 0.1 // A animação dispara quando 10% do elemento estiver visível
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Adiciona a classe que faz o elemento subir e aparecer
+                entry.target.classList.add('show-animation');
+                
+                // (Opcional) Para de observar o elemento depois que animou uma vez
+                // Se quiser que anime toda vez que rolar, remova a linha abaixo
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    // Seleciona todos os elementos que tem a classe .animate-on-scroll
+    const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+    elementsToAnimate.forEach((el) => observer.observe(el));
+
 });
 
 // ... (seu código do menu mobile está aqui acima) ...
