@@ -293,13 +293,6 @@ const navLinks = document.querySelectorAll('.navbar ul li a');
 window.addEventListener('scroll', () => {
     let currentSection = '';
 
-    // 1. Efeito de Sombra no Header
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-
     // 2. Identificar qual seção está na tela (Scrollspy)
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
