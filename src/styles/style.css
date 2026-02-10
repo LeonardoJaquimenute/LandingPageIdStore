@@ -42,6 +42,8 @@ a.btn {
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .btn-mobile {
@@ -73,6 +75,17 @@ a.btn {
     color: hsl(var(--primary));
   }
 }
+
+/* Remove highlight azul no mobile */
+.btn-mobile,
+.btn-mobile:focus,
+.btn-mobile:active {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 
 .subtitle-home {
   font-family: "Inter", sans-serif;
