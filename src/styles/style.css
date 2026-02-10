@@ -14,7 +14,7 @@
 
 @import "./exclusivity.css";
 
-@import "./trending.css";
+@import "./Trending.css";
 
 @import "./feedbacks.css";
 
@@ -217,54 +217,3 @@ h2 {
 .delay-4 { transition-delay: 800ms; }
 .delay-5 { transition-delay: 1000ms; }
 
-/* --- Seção de Produtos em Alta --- */
-.trending-header {
-  text-align: center;
-  margin-bottom: 40px; 
-}
-
-.trending-title {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #1a1a1a;
-  display: block;
-  margin-bottom: 14px;
-  font-weight: 400; 
-}
-
-.trending-line {
-  width: 42px;
-  height: 2px;
-  background: #c6ad8f; 
-  display: block;
-  margin: 0 auto;
-}
-
-/* --- Ações da Seção Produtos em Alta --- */
-.trending-actions {
-    display: flex;
-    justify-content: center; 
-    margin-top: 48px; 
-    margin-bottom: 58px; 
-    padding: 0 4%; 
-}
-
-@media (max-width: 480px) {
-    .trending-actions .btn-secondary {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (min-width: 768px) {
-  #trending {
-    .trending-cards {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-  }
-}
