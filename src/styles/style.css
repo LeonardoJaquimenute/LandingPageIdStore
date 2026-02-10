@@ -74,7 +74,6 @@ a.btn {
 
 .btn-default:hover {
   color: hsl(var(--gold));
-  background-color: hsl(var(--primary));
   border-bottom: 1px solid hsl(var(--gold));
   border-radius: 0;
 }
@@ -91,6 +90,18 @@ a.btn {
   background-color: transparent;
   color: hsl(var(--primary));
 }
+
+.btn-whatsapp {
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--background)) !important;
+  border: none !important;
+}
+
+.btn-whatsapp:hover {
+  background-color: hsl(var(--gold)) !important;
+  color: hsl(var(--background)) !important;
+}
+
 
 /* Fix universal para Android */
 button,
