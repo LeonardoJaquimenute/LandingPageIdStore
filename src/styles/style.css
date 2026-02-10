@@ -29,11 +29,11 @@ body{
   margin: 0;
   padding: 0;
 }
-
 a.btn {
   text-decoration: none;
 }
 
+/* BOTÃO BASE */
 .btn {
   padding: 10px 20px;
   border: none;
@@ -41,49 +41,61 @@ a.btn {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: transparent;
+  background-color: transparent !important;
   -webkit-tap-highlight-color: transparent;
-  outline: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+/* ESPECÍFICO PARA O BOTÃO MOBILE */
 .btn-mobile {
   font-size: 1.5rem;
+  background: transparent !important;
+  color: inherit;
+  border: none !important;
+  box-shadow: none !important;
 }
 
+/* Remover highlight/efeito no clique (MOBILE) */
+.btn-mobile:active,
+.btn-mobile:focus,
+.btn-mobile:hover {
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* BTN DEFAULT */
 .btn-default {
   color: hsl(var(--primary));
-  transition: background-color 0.3s ease;
   transition: all 0.2s ease;
-
-  &:hover {
-    color: hsl(var(--gold));
-    border-bottom: 1px solid hsl(var(--gold));
-    border-radius: 0px;
-  }
 }
 
+.btn-default:hover {
+  color: hsl(var(--gold));
+  border-bottom: 1px solid hsl(var(--gold));
+  border-radius: 0;
+}
+
+/* BTN OUTLINED */
 .btn-outlined {
   border: 2px solid hsl(var(--primary));
   background-color: hsl(var(--primary));
   color: hsl(var(--background));
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
-
-  &:hover {
-    background-color: transparent;
-    color: hsl(var(--primary));
-  }
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Remove highlight azul no mobile */
-.btn-mobile,
-.btn-mobile:focus,
-.btn-mobile:active {
-  -webkit-tap-highlight-color: transparent;
-  outline: none;
-  background: transparent;
-  box-shadow: none;
+.btn-outlined:hover {
+  background-color: transparent;
+  color: hsl(var(--primary));
+}
+
+/* Fix universal para Android */
+button,
+.btn,
+.btn-mobile {
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
 }
 
 
