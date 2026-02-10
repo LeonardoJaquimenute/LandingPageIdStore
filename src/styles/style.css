@@ -41,7 +41,7 @@ a.btn {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background-color: transparent !important;
+  background-color: transparent;
   -webkit-tap-highlight-color: transparent;
   outline: none !important;
   box-shadow: none !important;
