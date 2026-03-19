@@ -56,7 +56,7 @@
 
 .carousel-item img {
     width: 100%;
-    height: 350px;
+    height: 500px;
     object-fit: cover;
     display: block;
 }
@@ -208,7 +208,7 @@
     }
 
     .carousel-item img {
-        height: 250px;
+        height: 400px;
     }
 
     .carousel-btn {
